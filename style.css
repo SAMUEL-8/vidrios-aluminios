@@ -185,7 +185,7 @@ body {
 }
 
 .skill-box:hover {
-    transform: translate3d(15px);
+    transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
 }
@@ -654,6 +654,78 @@ body {
     }
 }
 
+.light-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: transform .3s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+
+.light-box .acce {
+    position: fixed;
+    background: #333;
+    color: #fff;
+    height: 33px;
+    width: 134px;
+    text-align: center;
+    margin-top: 25em;
+    font-size: 15px;
+    border-radius: 15px;
+    letter-spacing: 1.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.light-box .light-img2 {
+    width: 33vw;
+    max-height: 74vh;
+}
+
+.light-box .light-img3 {
+    width: 51vw;
+    max-height: 78vh;
+}
+
+.light-box:target {
+    transform: scale(1);
+}
+
+.close {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 90px;
+    color: #FFF;
+    background: #333;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.next {
+    display: block;
+    background: #333;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 50px;
+    font-size: 25px;
+    border-radius: 15px;
+}
+
 @media(max-width:412px) {
     .header-txt h1 {
         font-size: 2rem;
@@ -688,10 +760,61 @@ body {
     .container-inf {
         padding: 0px 10px;
     }
+
+    .light-box img {
+        width: 71vw;
+    }
+
+    .next {
+        margin: auto;
+    }
+
+    .light-box .light-img2 {
+        width: 71vw;
+    }
+
+    .light-box .light-img3 {
+        width: 71vw;
+    }
+
+    .close {
+        top: 217px;
+        right: 190px;
+    }
 }
 
-@media(max-width:550px) {
+@media(max-width:597px) {
     .container-pro {
         display: inherit;
+    }
+
+    .next {
+        margin: auto;
+    }
+
+    .close {
+        top: 217px;
+        right: 190px;
+    }
+}
+
+@media(max-width:849px) {
+    .next {
+        margin: auto;
+    }
+
+    .light-box .light-img2 {
+        width: 70vw;
+        max-height: 74vh;
+    }
+
+    .light-box .light-img3 {
+        width: 70vw;
+        max-height: 74vh;
+    }
+
+    .close {
+        top: 141px;
+        right: 212px;
     }
 }
