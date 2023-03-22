@@ -784,6 +784,10 @@ body {
     .light-box img {
         width: 72vw !important;
     }
+
+    .light-box .acce {
+        margin-top: 12em;
+    }
 }
 
 @media(max-width:597px) {
@@ -807,6 +811,10 @@ body {
     .light-box .light-img3 {
         width: 67vw;
     }
+
+    .light-box .acce {
+        margin-top: 11em;
+    }
 }
 
 @media(max-width:865px) {
@@ -823,5 +831,9 @@ body {
 
     .light-box img {
         width: 53vw;
+    }
+
+    .light-box .acce {
+        margin-top: 15em;
     }
 }
